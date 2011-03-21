@@ -16,6 +16,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\DoctrineBundle\DoctrineBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+            new Acme\DemoBundle\AcmeDemoBundle(),
             
             # Extra Bundles
             new FOS\UserBundle\FOSUserBundle(),
@@ -27,7 +29,6 @@ class AppKernel extends Kernel
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Symfony\Bundle\WebConfiguratorBundle\SymfonyWebConfiguratorBundle();
-            $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
         }
 
         return $bundles;
