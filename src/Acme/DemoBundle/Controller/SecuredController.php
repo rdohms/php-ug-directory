@@ -45,7 +45,10 @@ class SecuredController extends Controller
     }
 
     /**
-     * @extra:Route("/hello/{name}", name="_demo_secured_hello")
+     * @extra:Routes({
+     *   @extra:Route("/hello", defaults={"name"="World"}),
+     *   @extra:Route("/hello/{name}", name="_demo_secured_hello")
+     * })
      * @extra:Template()
      */
     public function helloAction($name)
@@ -58,7 +61,7 @@ class SecuredController extends Controller
      * @extra:Secure(roles="ROLE_ADMIN")
      * @extra:Template()
      */
-    public function helloAdminAction($name)
+    public function helloadminAction($name)
     {
         return array('name' => $name);
     }
