@@ -45,6 +45,17 @@ doctrine:
             default:
                 mappings:
                     AcmeDemoBundle: ~
+                    FOSUserBundle: ~
+                    AppAccountBundle: ~
+
+# User Bundle
+fos_user:
+    db_driver: orm
+    provider_key: main
+    class:
+        model:
+            user: App\AccountBundle\Entity\User
+            group: FOS\UserBundle\Entity\DefaultGroup
 
 # Swiftmailer Configuration
 swiftmailer:

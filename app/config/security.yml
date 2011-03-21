@@ -3,32 +3,44 @@ security:
         Symfony\Component\Security\Core\User\User: plaintext
 
     providers:
-        in_memory:
-            users:
-                user:  { password: userpass, roles: [ 'ROLE_USER' ] }
-                admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+        accountbundle:
+            id: fos_user.user_manager
+#        in_memory:
+#            users:
+#                user:  { password: userpass, roles: [ 'ROLE_USER' ] }
+#                admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
 
     firewalls:
-        profiler:
-            pattern:  /_profiler.*
-            security: false
+#        profiler:
+#            pattern:  /_profiler.*
+#            security: false
+#
+#        wdt:
+#            pattern:  /_wdt.*
+#            security: false
 
-        wdt:
-            pattern:  /_wdt.*
-            security: false
+#        login:
+#            pattern:  /demo/secured/login
+#            security: false
 
-        login:
-            pattern:  /demo/secured/login
-            security: false
-
-        secured_area:
-            pattern:    /demo/secured/.*
-            form_login:
-                check_path: /demo/secured/login_check
-                login_path: /demo/secured/login
-            logout:
-                path:   /demo/secured/logout
-                target: /demo/
+#        secured_area:
+#            pattern:    /demo/secured/.*
+#            form_login:
+#                check_path: /demo/secured/login_check
+#                login_path: /demo/secured/login
+#            logout:
+#                path:   /demo/secured/logout
+#                target: /demo/
+        main:
+          pattern:      .*
+          form-login:
+              provider:       accountbundle
+              login_path:     /login
+              use_forward:    false
+              check_path:     /login_check
+              failure_path:   null
+          logout:       true
+          anonymous:    true
             #anonymous: ~
             #http_basic:
             #    realm: "Secured Demo Area"
