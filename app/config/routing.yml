@@ -20,3 +20,6 @@ fos_user_user:
     
 app_account:
     resource: @AppAccountBundle/Resources/config/routing.yml
+
+app_site:
+    resource: @AppsiteBundle/Resources/config/routing.yml

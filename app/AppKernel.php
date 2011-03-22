@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             
             # App Bundles
             new App\AccountBundle\AppAccountBundle(),
+            new App\SiteBundle\AppSiteBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

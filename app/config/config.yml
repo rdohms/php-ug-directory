@@ -47,6 +47,7 @@ doctrine:
                     AcmeDemoBundle: ~
                     FOSUserBundle: ~
                     AppAccountBundle: ~
+                    AppSiteBundle: ~
 
 # User Bundle
 fos_user:
