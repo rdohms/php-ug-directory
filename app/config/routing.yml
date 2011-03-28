@@ -1,5 +1,5 @@
 _welcome:
-    pattern:  /
+    pattern:  /welcome
     defaults: { _controller: AcmeDemoBundle:Welcome:index }
 
 _demo_secured:
@@ -22,4 +22,7 @@ app_account:
     resource: @AppAccountBundle/Resources/config/routing.yml
 
 app_site:
-    resource: @AppsiteBundle/Resources/config/routing.yml
+    resource: @AppSiteBundle/Resources/config/routing.yml
+
+app_web:
+    resource: @AppWebBundle/Resources/config/routing.yml

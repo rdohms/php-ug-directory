@@ -1,0 +1,24 @@
+HTML { background-color: #FFF; }
+
+BODY { font-family:Tahoma;font-size:12px;color:#000; }
+
+.ugd-wrapper-style{margin:0 auto;float:none;padding:0 10px;z-index:-10;border:0px solid #999;-webkit-box-shadow:0px 0px 15px #A8A8A8;-moz-box-shadow:0px 0px 15px #A8A8A8;box-shadow:0px 0px 15px #A8A8A8;}
+
+#ugd-wrapper{background-color:#fff;-moz-border-radius-topleft:0px;-moz-border-radius-topright:0px;-moz-border-radius-bottomright:10px;-moz-border-radius-bottomleft:10px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;}
+
+#ugd-login-bar { height: 22px; background-color: #61208A; text-align: right; font-size: 12px; color: #FFF; }
+#ugd-login-bar a{ color: #D4B6E8; text-decoration: none;  }
+#ugd-login-bar ul {float: right;}
+#ugd-login-bar ul li { padding: 0  0 0 10px; line-height:22px; display:inline;}
+
+.ugd-header {}
+.ugd-header h1 { font-size: 2em; font-weight:bold; color: #FFF; text-shadow: 0px 0px 10px #000000;
+filter: dropshadow(color=#000000, offx=0, offy=0); }
+.ugd-header .mark { height: 55px; background: #DDD url('/bundles/appsite/images/header-bg.png') no-repeat fixed top left;  }
+.ugd-header nav {}
+.ugd-header nav ul { float: left; }
+.ugd-header nav ul li { padding: 0 10px 0 0; }
+
+.ugd-content {}
+
+.ugd-footer { font-size: 10px; border-top: 1px dashed #CCC; margin-top: 15px; padding: 5px; }

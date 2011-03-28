@@ -26,8 +26,14 @@ class User extends Entity\User
     protected $groups;
     
     /**
-     * @orm:@ManyToOne(targetEntity="App\SiteBundle\Entity\UserGroup", inversedBy="leaders")
-     * @var type 
+     * @orm:Column(type="string", length=150, nullable=true)
+     * @var string
+     */
+    protected $name;
+    
+    /**
+     * @orm:ManyToOne(targetEntity="App\SiteBundle\Entity\UserGroup", inversedBy="leaders")
+     * @var \App\SiteBundle\Entity\UserGroup 
      */
     protected $leaderOf;
 }

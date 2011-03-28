@@ -48,6 +48,7 @@ doctrine:
                     FOSUserBundle: ~
                     AppAccountBundle: ~
                     AppSiteBundle: ~
+                    AppWebBundle: ~
 
 # User Bundle
 fos_user:
