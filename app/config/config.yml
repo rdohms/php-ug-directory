@@ -25,6 +25,9 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
+    filters:
+        cssrewrite: ~
+        closure:    ~
 
 # Doctrine Configuration
 doctrine:
@@ -44,11 +47,12 @@ doctrine:
         entity_managers:
             default:
                 mappings:
-                    AcmeDemoBundle: ~
-                    FOSUserBundle: ~
-                    AppAccountBundle: ~
-                    AppSiteBundle: ~
-                    AppWebBundle: ~
+<<<<<<< HEAD
+                    AcmeDemo: ~
+                    FOSUser: ~
+                    AppAccount: ~
+                    AppSite: ~
+                    AppWeb: ~
 
 # User Bundle
 fos_user:
