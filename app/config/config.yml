@@ -47,7 +47,6 @@ doctrine:
         entity_managers:
             default:
                 mappings:
-<<<<<<< HEAD
                     AcmeDemo: ~
                     FOSUser: ~
                     AppAccount: ~
@@ -61,7 +60,6 @@ fos_user:
     class:
         model:
             user: App\AccountBundle\Entity\User
-            group: FOS\UserBundle\Entity\DefaultGroup
 
 # Swiftmailer Configuration
 swiftmailer:

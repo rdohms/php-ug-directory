@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('AppSiteBundle:Default:index.html.twig');
+        return $this->render('AppSite:Default:index.html.twig');
     }
 }
