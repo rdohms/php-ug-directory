@@ -1,15 +1,7 @@
-# Standard Synfony
 web/bundles/
-app/bootstrap*
+app/bootstrap.php.cache
 app/cache/*
 app/logs/*
 build/
-vendor/
-
-# IDEs and OSs
-*.tmproj
-tmtags
-.DS_Store
-
-# App
-app/config/parameters.ini
+vendor
+composer.phar
